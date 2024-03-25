@@ -1,7 +1,3 @@
-<script setup lang="ts">
-const version = 2 + 1
-</script>
-
 <template>
   <div class="flex justify-center">
     <div class="w-full max-w-3xl md:max-w-2xl md:w-4/6 p-3 md:p-6">
@@ -23,17 +19,20 @@ const version = 2 + 1
         <!-- imagen -->
         <!-- presentacion -->
       </section>
-      <section id="projects">
-        <h2 class="text-3xl font-extrabold">Proyectos</h2>
-        <div class="flex justify-center p-4 ">
-          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 w-10/12">
-            <ProjectCard title="Project 1"
-              description="Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam" />
-            <ProjectCard title="Project 2"
-              description="Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam" />
+      <div>
+        <section id="projects">
+          <h2 class="text-3xl font-extrabold">Proyectos</h2>
+          <div class="flex justify-center p-4 ">
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 w-10/12">
+              <ProjectCard title="Project 1"
+                description="Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam" />
+              <ProjectCard title="Project 2"
+                description="Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam" />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
       <section id="skills"></section>
       <section id="contact">
       </section>

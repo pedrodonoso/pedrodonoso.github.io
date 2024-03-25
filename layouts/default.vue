@@ -1,7 +1,8 @@
 <template>
+
     <div class="font-mono text-slate-300">
         <AppNavbar />
-            <slot />
+        <slot />
         <AppFooter />
     </div>
 </template>
