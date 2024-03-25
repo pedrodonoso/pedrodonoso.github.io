@@ -23,9 +23,13 @@ export default {
   <div class="flex justify-center">
     <div class="w-full max-w-3xl md:max-w-2xl md:w-4/6 p-3 md:p-6">
       <Header>
-        <h1 class="text-3xl font-extrabold">Hey! Hola, soy <span class="text-teal-400">Pedro.</span>👋</h1>
-        <em class="font-semibold">Soy <span class="text-teal-400">Ingeniero de Software</span> y <span
-            class="text-teal-400">Patinador esporádico</span>.</em>
+        <h1 class="text-3xl font-extrabold">Hey! Hola, soy <span class="text-teal-400">Pedro</span>.👋</h1>
+        <em class="font-semibold">
+          Soy
+          <span class="text-teal-400">Ingeniero de Software</span>
+          y
+          <span class="text-teal-400">Patinador esporádico</span>.
+        </em>
         <div class="text-left">
           <p>Más abajo puedes leer sobre los proyectos dónde he aportado mi granito de arena.</p>
         </div>
@@ -36,28 +40,24 @@ export default {
           <span class="animate-[bounce_2s_infinite]">.</span>
         </p>
       </Header>
-      <section id="about">
-        <!-- imagen -->
-        <!-- presentacion -->
-      </section>
-      <div>
-
-        <section id="projects" class="text-left space-y-12">
-
-          <h2 class="text-3xl font-extrabold">
-            <Icon size="2.2rem" name="ph:terminal-bold" /> Proyectos
-          </h2>
-
+      <div class="space-y-16">
+        <section id="about">
+          <!-- imagen -->
+          <!-- presentacion -->
+        </section>
+        <SectionContainer title="Proyectos" icon="tabler:folder-code" id="projects">
           <div class="flex flex-col text-left space-y-8">
             <ProjectItem v-bind:key="project.name" v-for="(project) in projects" :name="project.name"
               :description="project.description" :tags="project.tags" />
           </div>
-        </section>
-      </div>
+        </SectionContainer>
 
-      <section id="skills"></section>
-      <section id="contact">
-      </section>
+        <SectionContainer title="Habilidades" icon="tabler:code-plus" id="skills">
+        </SectionContainer>
+
+        <SectionContainer title="Contacto" icon="tabler:message-circle-code" id="contact">
+        </SectionContainer>
+      </div>
     </div>
   </div>
 </template>
