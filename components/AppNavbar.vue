@@ -16,9 +16,9 @@ export default {
 <template>
     <div class="shadow-xl py-6 px-8">
         <nav class="flex overflow-x-auto font-semibold space-x-8 justify-between md:justify-start">
-            <li class="font-extrabold text-teal-400 hover:text-teal-800 visited:text-teal-600">
-                <a href="#about">{{ name }}</a>
-            </li>
+            <a class="font-extrabold text-teal-400 hover:text-teal-800 visited:text-teal-600" href="#about">{{
+                name }}
+            </a>
             <li v-bind:key="route.name" v-for="(route) in routes"
                 class="hidden md:block hover:text-teal-800 visited:text-teal-600">
                 <a :href="route.ref">{{ route.name }}</a>

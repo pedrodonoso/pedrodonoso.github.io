@@ -30,11 +30,11 @@ export default {
           y
           <span class="text-teal-400">Patinador esporádico</span>.
         </em>
-        <div class="text-left">
+        <div class="text-center">
           <p>Más abajo puedes leer sobre los proyectos dónde he aportado mi granito de arena.</p>
         </div>
-        <p class="flex text-xs justify-left">
-          <span>En continuo aprendizaje</span>
+        <span>En continuo aprendizaje &nbsp;</span>
+        <p class="flex text-xs justify-center">
           <span class="animate-[bounce_1s_infinite]">.</span>
           <span class="animate-[bounce_1500ms_infinite]">.</span>
           <span class="animate-[bounce_2s_infinite]">.</span>
