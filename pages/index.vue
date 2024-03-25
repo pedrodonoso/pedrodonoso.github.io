@@ -1,3 +1,24 @@
+<script>
+const projects = [
+  {
+    name: "Project 1",
+    description: "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
+    tags: ["tag1", "tag2", "tag3"]
+  }, {
+    name: "Project 2",
+    description: "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
+    tags: ["tag1", "tag2", "tag3sda", "sdsad"]
+  }
+];
+export default {
+  data() {
+    return {
+      projects: projects
+    }
+  }
+}
+</script>
+
 <template>
   <div class="flex justify-center">
     <div class="w-full max-w-3xl md:max-w-2xl md:w-4/6 p-3 md:p-6">
@@ -20,15 +41,16 @@
         <!-- presentacion -->
       </section>
       <div>
-        <section id="projects">
-          <h2 class="text-3xl font-extrabold">Proyectos</h2>
-          <div class="flex justify-center p-4 ">
-            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 w-10/12">
-              <ProjectCard title="Project 1"
-                description="Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam" />
-              <ProjectCard title="Project 2"
-                description="Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam" />
-            </div>
+
+        <section id="projects" class="text-left space-y-12">
+
+          <h2 class="text-3xl font-extrabold">
+            <Icon size="2.2rem" name="ph:terminal-bold" /> Proyectos
+          </h2>
+
+          <div class="flex flex-col text-left space-y-8">
+            <ProjectItem v-bind:key="project.name" v-for="(project) in projects" :name="project.name"
+              :description="project.description" :tags="project.tags" />
           </div>
         </section>
       </div>
