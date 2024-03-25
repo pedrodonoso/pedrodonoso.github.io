@@ -1,7 +1,7 @@
 <template>
-    <div class="h-screen flex items-center justify-center">
-        <div class="flex flex-col space-y-4 px-0 w-3/4">
+    <span class="h-[calc(100vh-112px)] flex items-center justify-center p-0 mx-0">
+        <span class="flex flex-col space-y-4 sm:w-3/4">
             <slot />
-        </div>
-    </div>
+        </span>
+    </span>
 </template>

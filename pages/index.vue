@@ -21,7 +21,7 @@ export default {
 
 <template>
   <div class="flex justify-center">
-    <div class="w-full max-w-3xl md:max-w-2xl md:w-4/6 p-3 md:p-6">
+    <div class="w-screen max-w-3xl md:max-w-2xl md:w-4/6 px-12 md:p-0">
       <Header>
         <h1 class="text-3xl font-extrabold">Hey! Hola, soy <span class="text-teal-400">Pedro</span>.👋</h1>
         <em class="font-semibold">
