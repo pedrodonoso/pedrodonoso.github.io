@@ -57,11 +57,7 @@ export default {
         </SectionContainer>
 
         <SectionContainer title="Habilidades" icon="tabler:code-plus" id="skills">
-          <!-- <skill-item>a</skill-item>
-          <skill-item>a</skill-item>
-          <skill-item>a</skill-item> -->
           <div class=" flex justify-center items-center">
-            <!-- <div class="grid grid-cols-5 grid-flow-row gap-4 w-fit place-items-center "> -->
             <div class="flex flex-wrap justify-center gap-2">
               <skill-item v-bind:key="skill" v-for="(skill) in skills" :title="skill" />
             </div>
