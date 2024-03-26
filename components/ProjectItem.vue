@@ -18,7 +18,9 @@ defineProps({
                 </div>
                 <p>{{ description }}</p>
                 <nav class="flex gap-x-2">
-                    <Badge v-bind:key="tag" v-for="(tag) in tags">{{ tag }} </Badge>
+                    <badge-container>
+                        <Badge v-bind:key="tag" v-for="(tag) in tags">{{ tag }} </Badge>
+                    </badge-container>
                 </nav>
             </div>
         </div>

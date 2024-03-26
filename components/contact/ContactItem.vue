@@ -9,7 +9,7 @@ defineProps({
         class="flex flex-row items-center gap-2 rounded-full bg-teal-900 hover:-translate-y-1 duration-200"
         :href="href" target=”_blank”>
         <div class="size-9 text-center items-center justify-center align-middle ">
-            <Icon class="text-red-100 size-8" :name="icon" />
+            <Icon class="text-teal-100 size-8" :name="icon" />
         </div>
         <div v-if="$slots.default" class="text-l hidden md:block">
             <slot />

@@ -1,5 +1,7 @@
 <script>
 
+import { useWindowFocus } from '@vueuse/core'
+const focused = useWindowFocus();
 export default {
     data() {
         return {
@@ -8,20 +10,24 @@ export default {
             routes: [
                 { name: 'Proyectos', ref: '#projects' },
                 { name: 'Habilidades', ref: '#skills' },
-                { name: 'Contacto', ref: '#contact' }]
+                { name: 'Contacto', ref: '#contact' }],
+            focused: focused.value
         }
     }
 }
 </script>
 <script setup>
-import IconOasis from '~/assets/icons/logo.svg'</script>
+import IconOasis from '~/assets/icons/logo.svg'
+</script>
+
 <template>
-    <div class="shadow-xl py-6 px-8">
-        <nav class="flex overflow-x-auto font-semibold space-x-8 justify-between md:justify-start items-center">
+    <div class="sticky top-0 start-0 shadow-xl py-6 px-8 bg-[#2a3141bd]">
+        <nav class="flex overflow-x-auto  space-x-8 justify-between md:justify-start items-center">
 
             <IconOasis class="size-8 text-teal-200" :fontControlled="false" alt="oasis icon" />
-
-            <a class="font-extrabold text-teal-400 hover:text-teal-200 visited:text-teal-600" href="#about">{{
+            <a :class="focused ? 'after:w-full after:duration-1000' : 'after:w-0 after:duration-0'"
+                class="font-bold relative text-teal-200 after:bg-teal-500 after:absolute after:h-0.5 after:bottom-0 after:left-0  after:transition-all  cursor-pointer"
+                href="#about">{{
                 name }}
             </a>
             <div class="hidden md:block text-teal-300 hover:text-teal-200 visited:text-teal-600" v-bind:key="route.name"
