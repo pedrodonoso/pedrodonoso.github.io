@@ -1,0 +1,28 @@
+[
+  
+  {
+    "name": "Solution WTA with Simulated Annealing and Best Improvement Heuristic",
+    "description": "Proyecto de la asignatura de Introducción a la Inteligencia Artificial. Una implementación de solución para el problema Weapon Target Assignment (WTA) con Simulated Annealing y heurística Best Improvement.",
+    "tags": ["C++", "Bash", "Make", "WTA", "Simulated Annealing", "Best Improvement"],
+    "github": "https://github.com/pedrodonoso/WTA_SA_MM"
+  },
+  {
+    "name": "Punto Ético",
+    "description": "Sistema que gestiona el canal de las denuncias en empresas. Levantamiento de requerimientos, diseño de la arquitectura y desarrollo del servicio web y API-REST para la gestión de denuncias.",
+    "tags": ["NextJS", "Golang", "AWS-EC2", "Bootstrap", "Docker"],
+    "web": "https://puntoetico.cl"
+  },
+  {
+    "name": "Apprende",
+    "description": "Apprende es una red social que conecta a los interesados en participar de la Educación No Formal. Se desarrolló el servicio web. Participé activamente como desarrollador y líder de equipo.",
+    "tags": ["ReacJS", "Bootstrap", "Docker", "AWS-EC2"],
+    "linkedin": "https://www.linkedin.com/in/rodrigo-ramirez-1b1b1b1b/",
+    "web": "https://apprendechile.com"
+  },
+  {
+    "name": "Portafolio",
+    "description": "Este portafolio fue desarrollado con NuxtJS y TailwindCSS.",
+    "tags": ["NuxtJS", "Tailwind"],
+    "github": "https://github.com/pedrodonoso/pedrodonoso.github.io"
+  }
+]

@@ -2,7 +2,7 @@
 const props = defineProps({
     name: String,
     description: String,
-    tags: [String]
+    tags: Array
 })
 </script>
 

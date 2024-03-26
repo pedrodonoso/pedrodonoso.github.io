@@ -1,6 +1,6 @@
 <template>
   <span
-    class="text-xs font-medium px-2.5 py-1 rounded-sm bg-teal-100 text-teal-900 cursor-default">
+    class="text-sm font-medium px-3 py-1 bg-teal-900  cursor-default">
     <slot />
   </span>
 </template>
