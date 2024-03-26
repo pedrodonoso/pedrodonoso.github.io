@@ -25,6 +25,5 @@ export default defineNuxtConfig({
         src: "https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js",
       },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/imagotipo.ico" }],
   },
 });
