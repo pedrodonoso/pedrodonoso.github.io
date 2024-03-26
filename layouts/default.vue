@@ -1,8 +1,7 @@
 <template>
-
-    <div class="font-mono text-slate-300">
+    <div class="font-mono select-none">
         <Navbar />
-        <slot />
+           <slot />
         <Footer />
     </div>
 </template>

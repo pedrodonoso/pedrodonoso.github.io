@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  /* color-scheme: light dark; */
+  color-scheme: dark;
   background-color: #23283e;
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
 }

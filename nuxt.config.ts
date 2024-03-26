@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ["nuxt-icon", "nuxt-svgo"],
+  modules: ["nuxt-icon", "nuxt-svgo", "@nuxt/content"],
   svgo: {
     autoImportPath: "./assets/icons/",
   },
@@ -18,4 +18,13 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+  content: {
+    markdown: {
+      tags: {
+        h1: "MyProseH1",
+        h2: "MyProseH2",
+        p: "MyProseP",
+      },
+    },
+  },
 });
