@@ -6,8 +6,8 @@ defineProps({
 })
 </script>
 <template>
-    <div class="text-xl  space-x-2">
-        <a :href="github" target=”_blank” v-if="github" >
+    <div class="flex flex-row ps-2 md:ps-4 space-x-2">
+        <a :href="github" target=”_blank” v-if="github" class="p-0 m-0">
             <Icon class="text-teal-100 hover:-translate-y-1 duration-200" name="uil:github"/>
         </a>
         <a :href="linkedin" target=”_blank” v-if="linkedin">
