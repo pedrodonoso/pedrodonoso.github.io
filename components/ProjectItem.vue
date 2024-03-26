@@ -1,17 +1,26 @@
 <script setup>
-const props = defineProps({
+defineProps({
     name: String,
     description: String,
-    tags: Array
+    tags: Array,
+    urls: Object
 })
 </script>
 
 <template>
-    <div class="space-y-4">
-        <h1 class="text-xl font-extrabold">{{ props.name }}</h1>
-        <p>{{ props.description }}</p>
-        <nav class="flex gap-x-2">
-            <Badge v-bind:key="tag" v-for="(tag) in props.tags">{{ tag }} </Badge>
-        </nav>
+    <div class="flex justify-left items-center gap-6 space-y-7">
+        <div class="flex flex-col text-left space-y-8 gap-6 w-full">
+            <div class="space-y-4">
+                <div class="flex justify-between">
+                    <h1 class="text-xl font-extrabold">{{ name }}
+                    </h1>
+                    <social :github="urls.github" :linkedin="urls.linkedin" :web="urls.web" />
+                </div>
+                <p>{{ description }}</p>
+                <nav class="flex gap-x-2">
+                    <Badge v-bind:key="tag" v-for="(tag) in tags">{{ tag }} </Badge>
+                </nav>
+            </div>
+        </div>
     </div>
 </template>

@@ -1,19 +1,4 @@
 <script setup>
-// const projects = [
-//   {
-//     name: "Project 1",
-//     description: "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
-//     tags: ["tag1", "tag2", "tag3"]
-//   }, {
-//     name: "Project 2",
-//     description: "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
-//     tags: ["tag1", "tag2", "tag3sda", "sdsad"]
-//   }, {
-//     name: "Project 23",
-//     description: "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
-//     tags: ["tag1", "tag2", "tag3sda", "sdsad"]
-//   }
-// ];
 const projects = await queryContent('/portfolio/projects').findOne().then((res) => res.body);
 const querySkills = await queryContent('/portfolio/skills').findOne().then((res) => res.body);
 const skills = querySkills.map((item) => item.skill);
@@ -46,11 +31,8 @@ defineProps({
       </Header>
       <SectionContainer title="Proyectos" icon="tabler:folder-code" id="projects" class="pt-16">
         <div class="bg-teal-700 w-full p-9" v-bind:key="project.name" v-for="(project) in projects">
-          <div class="flex justify-left items-center gap-6 space-y-7" v-bind:key="project.name">
-            <div class="flex flex-col text-left space-y-8 gap-6">
-              <ProjectItem :name="project.name" :description="project.description" :tags="project.tags" />
-            </div>
-          </div>
+          <ProjectItem :name="project.name" :description="project.description" :tags="project.tags" :urls="project.urls"
+            v-bind:key="project.name" />
         </div>
       </SectionContainer>
 
