@@ -36,7 +36,7 @@ import IconOasis from '~/assets/icons/logo.svg'</script>
                 <Icon class="text-red-100" size="1.5rem" name="material-symbols-light:menu-rounded" />
             </button>
         </nav>
-        <div class="flex flex-col pt-4 text-center">
+        <div class="flex flex-col pt-4 text-center" v-if="showDrop">
             <div :class="showDrop ? 'display' : 'hidden'" class="md:hidden space-y-1">
                 <div v-bind:key="route.name" v-for="(route) in routes"
                     class="text-teal-300 hover:text-teal-200 visited:text-teal-600">
