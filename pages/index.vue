@@ -63,6 +63,13 @@ export default {
         </SectionContainer>
 
         <SectionContainer title="Contacto" icon="tabler:message-circle-code" id="contact">
+          <contact-container>
+            <contact-item href="https://github.com/pedrodonoso" icon="uil:github">
+              Mis proyectos
+            </contact-item>
+            <contact-item href="https://www.linkedin.com/in/pedrodonosoaguilera/" icon="uil:linkedin" />
+            <contact-item href="mailto:pedro.donosoa.dev@gmail.com" icon="bi:envelope-arrow-up-fill" />
+          </contact-container>
         </SectionContainer>
       </div>
     </div>
