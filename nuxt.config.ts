@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ["nuxt-icon" ,"nuxt-svgo"],
+  modules: ["nuxt-icon", "nuxt-svgo"],
   svgo: {
-    autoImportPath: './assets/icons/'
+    autoImportPath: "./assets/icons/",
   },
   css: ["~/assets/css/main.css"],
   postcss: {
@@ -25,5 +25,6 @@ export default defineNuxtConfig({
         src: "https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js",
       },
     ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/imagotipo.ico" }],
   },
 });
