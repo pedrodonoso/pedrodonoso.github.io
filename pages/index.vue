@@ -1,4 +1,5 @@
 <script>
+import SkillItem from '~/components/skills/SkillItem.vue';
 const projects = [
   {
     name: "Project 1",
@@ -10,10 +11,13 @@ const projects = [
     tags: ["tag1", "tag2", "tag3sda", "sdsad"]
   }
 ];
+const skills = ["HTML", "CSS", "TailWind", "ReactJS", "NextJS", "Golang", "Docker", "Javas"]
 export default {
+  components: { SkillItem },
   data() {
     return {
-      projects: projects
+      projects: projects,
+      skills: skills
     }
   }
 }
@@ -53,6 +57,15 @@ export default {
         </SectionContainer>
 
         <SectionContainer title="Habilidades" icon="tabler:code-plus" id="skills">
+          <!-- <skill-item>a</skill-item>
+          <skill-item>a</skill-item>
+          <skill-item>a</skill-item> -->
+          <div class=" flex justify-center items-center">
+            <!-- <div class="grid grid-cols-5 grid-flow-row gap-4 w-fit place-items-center "> -->
+            <div class="flex flex-wrap justify-center gap-2">
+              <skill-item v-bind:key="skill" v-for="(skill) in skills" :title="skill" />
+            </div>
+          </div>
         </SectionContainer>
 
         <SectionContainer title="Contacto" icon="tabler:message-circle-code" id="contact">
