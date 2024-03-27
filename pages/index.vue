@@ -10,9 +10,9 @@ defineProps({
 
 <template>
   <main class="flex justify-center">
-    <section class="w-screen max-w-3xl md:max-w-2xl md:w-4/6 px-12 md:p-0 space-y-16">
+    <section class="w-screen max-w-3xl md:max-w-2xl md:w-4/6 px-12 md:p-0">
       <header-container />
-      <aside class="animate__animated animate__fadeIn animate__delay-4s">
+      <aside class="animate__animated animate__fadeIn animate__delay-2s">
         <section-container title="Proyectos" icon="tabler:folder-code" id="projects" class="pt-24">
           <project-item v-bind="project" v-bind:key="project.name" v-for="(project) in projects" />
         </section-container>
