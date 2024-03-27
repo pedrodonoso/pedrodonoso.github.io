@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html {
   color-scheme: dark;
   background-color: #23283e;
@@ -14,4 +10,9 @@ body {
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
+}
+
+.animate__animated {
+  animation-duration: 2500ms;
+  /* animation-fill-mode: both; */
 }
