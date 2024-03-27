@@ -22,7 +22,7 @@ import IconOasis from '~/assets/icons/logo.svg'
 
 <template>
     <div class="sticky top-0 start-0 shadow-xl py-6 px-8 bg-[#2a3141bd] z-10">
-        <nav :class="showDrop ? 'mb-4' : ''" class="flex overflow-x-auto  space-x-8 justify-between md:justify-start items-center">
+        <nav :class="showDrop ? 'mb-4' : ''" class="flex overflow-x-auto  space-x-8 justify-between sm:justify-start items-center">
 
             <IconOasis class="size-8 text-teal-200" :fontControlled="false" alt="oasis icon" />
             <!--
@@ -38,11 +38,11 @@ import IconOasis from '~/assets/icons/logo.svg'
 
             <!-- md dropdown -->
             <button v-on:click="showDrop = !showDrop" class="sm:hidden ">
-                <Icon class="text-teal-400 " size="1.5rem" name="material-symbols-light:menu-rounded" />
+                <Icon class="text-teal-400" size="1.8rem" name="material-symbols-light:menu-rounded" />
             </button>
         </nav>
             <div class="flex flex-col pt-4 text-center" v-if="showDrop">
-                <div class="md:hidden space-y-1">
+                <div class="sm:hidden space-y-1">
                     <div v-bind:key="route.name" v-for="(route) in routes"
                         class="text-teal-300 hover:text-teal-200 visited:text-teal-600">
                         <Ref v-on:click="showDrop = !showDrop" v-bind="route" />
