@@ -4,7 +4,10 @@ defineProps({
     description: String,
     tags: Array,
     urls: Object,
-    responsabilities: String
+    responsabilities: String,
+    is_copyright: Boolean,
+    is_trademark: Boolean,
+    is_registered: Boolean
 })
 </script>
 
@@ -12,7 +15,11 @@ defineProps({
     <div class="flex justify-left items-center gap-6 space-y-7 text-pretty">
         <div class="flex flex-col text-left space-y-8 gap-6 w-full">
             <div class="space-y-3 md:space-y-4">
-                <h1 class="text-xl font-extrabold">{{ name }}
+                <h1 class="flex text-xl font-extrabold">
+                    {{ name }}
+                    <Icon v-if="is_copyright" class="size-3 align-top pt-0.1" name="icon-park-outline:copyright" />
+                    <Icon v-if="is_trademark" class="size-3.5 align-top" name="ph:trademark" />
+                    <Icon v-if="is_registered" class="size-3-5 align-top" name="ph:trademark-registered" />
                 </h1>
                 <p class="text-xs md:text-sm leading-tight text-teal-100">{{ description }}</p>
                 <p class="text-sm md:text-base md:leading-tight"> {{ responsabilities }}</p>

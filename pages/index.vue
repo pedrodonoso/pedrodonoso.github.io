@@ -34,7 +34,7 @@ defineProps({
       <main class="animate__animated animate__fadeIn animate__delay-4s">
         <SectionContainer title="Proyectos" icon="tabler:folder-code" id="projects" class="pt-24">
           <div class="bg-teal-700 w-full p-9" v-bind:key="project.name" v-for="(project) in projects">
-            <ProjectItem v-bind="project" v-bind:key="project.name" />
+            <project-item v-bind="project" v-bind:key="project.name" />
           </div>
         </SectionContainer>
 

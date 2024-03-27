@@ -16,18 +16,30 @@
     }
   },
   {
-    "name": "Punto Ético®",
+    "name": "Punto Ético",
+    "is_trademark": true,
     "description": "Sistema que gestiona el canal de denuncias en empresas.",
-    "responsabilities": "Levantamiento de requerimientos, diseño de la arquitectura y desarrollo full-stack de los requerimientos para posteriormente lenvantar los servicios en producción mediante los servicios de la nube provisto por AWS tanto para levantar los entornos de producción en máquinas virtuales dispuestas en la red y la  gestión de nombres de dominio que posiciona los servicios sus dominios correspondientes.",
-    "tags": ["NextJS", "Zustand", "React-Query", "TypeScript", "Golang", "AWS-EC2", "AWS-Route53", "Bootstrap", "Docker"],
+    "responsabilities": "Se llevó a cabo el levantamiento de requerimientos, el diseño de la arquitectura y la implementación. Posteriormente, se desplegaron los servicios en producción utilizando los servicios de la nube proporcionados por AWS. Esto incluyó la configuración de entornos de producción en máquinas virtuales dentro de la red, así como la gestión de los nombres de dominio para vincular los servicios con sus dominios correspondientes.",
+    "tags": [
+      "NextJS",
+      "Zustand",
+      "React-Query",
+      "TypeScript",
+      "Golang",
+      "AWS-EC2",
+      "AWS-Route53",
+      "Bootstrap",
+      "Docker"
+    ],
     "urls": {
       "web": "https://puntoetico.cl"
     }
   },
   {
-    "name": "Apprende®",
-    "description": "Apprende es una red social que conecta a los interesados en participar de la Educación No Formal. Se desarrolló el servicio web. Participé activamente como desarrollador y líder de equipo.",
-    "responsabilities": "",
+    "name": "Apprende",
+    "is_trademark": true,
+    "description": "Apprende es una red social que conecta a los interesados en participar de la Educación No Formal.",
+    "responsabilities": "Como la persona encargada de gestionar los proyectos relacionados con el software, estuve a cargo del levantamiento de requerimientos, el diseño de la arquitectura y la toma de decisiones sobre las tecnologías a utilizar en función de las necesidades. Además, participé activamente como desarrollador y líder de equipo en el desarrollo del servicio web, el cual fue posteriormente desplegado en un entorno de producción utilizando AWS.",
     "tags": ["ReacJS", "Bootstrap", "Docker", "AWS-EC2"],
     "urls": {
       "linkedin": "https://www.linkedin.com/company/apprendecl/?originalSubdomain=cl",
@@ -35,9 +47,10 @@
     }
   },
   {
-    "name": "FESW - Peacth-AC",
-    "description": "Proyecto para presentar en la Feria de Softare UTFSM. Se desarrolló un sistema de control de pacientes con tratamiento de anticoagulante acenocumarol. El sistema permite llevar un control de los pacientes, sus controles y la dosis de anticoagulante. La estimación de dosis puede ser manual, por método del tanteo o estimada por un algoritmo de Regresión Lineal o Machine Learning.",
-    "responsabilities": "",
+    "name": "Peacth-AC",
+    "is_copyright": true,
+    "description": "Proyecto para presentar en la Feria de Softare UTFSM (FESW).",
+    "responsabilities": "En colaboración con un equipo multidisciplinario, se creó un sistema de control para pacientes en tratamiento con anticoagulante acenocumarol. Este sistema facilita el seguimiento de los pacientes, sus controles y la dosis de anticoagulante. La estimación de la dosis puede realizarse de forma manual, a través del método del tanteo, o ser calculada mediante un algoritmo de Regresión Lineal o Aprendizaje Automático (Machine Learning).",
     "tags": ["ReacJS", "Bootstrap", "Shards", "Docker", "Heroku"],
     "urls": {
       "web": "https://peacth-ac.feriadesoftware.cl"
@@ -45,8 +58,8 @@
   },
   {
     "name": "Portafolio",
-    "description": "Este portafolio fue desarrollado con NuxtJS y TailwindCSS.",
-    "responsabilities": "",
+    "description": "Portafolio personal con la finalidad de aprender sobre NuxtJS y Tailwind.",
+    "responsabilities": "Realicé este portafolio con el objetivo de familiarizarme con NuxtJS y Tailwind, además de proporcionarme un espacio para exhibir mis proyectos y habilidades. Se desplegó en GitHub Pages para su visualización.",
     "tags": ["NuxtJS", "Tailwind"],
     "urls": {
       "github": "https://github.com/pedrodonoso/pedrodonoso.github.io"
