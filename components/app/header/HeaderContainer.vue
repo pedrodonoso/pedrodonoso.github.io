@@ -1,6 +1,6 @@
 <template>
-    <section class="h-[calc(100vh-112px)] flex items-center justify-center p-0 mx-0">
-        <div class="flex flex-col space-y-4 sm:w-3/4">
+    <section class="flex items-center justify-center pt-24 h-[50vh]">
+        <div class="flex flex-col gap-3 sm:w-3/4">
             <Header />
         </div>
     </section>
