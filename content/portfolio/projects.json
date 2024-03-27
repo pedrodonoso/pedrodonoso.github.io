@@ -1,7 +1,8 @@
 [
   {
     "name": "Solution WTA with Simulated Annealing and Best Improvement Heuristic",
-    "description": "Proyecto de la asignatura de Introducción a la Inteligencia Artificial. Una implementación de solución para el problema Weapon Target Assignment (WTA) con Simulated Annealing y heurística Best Improvement.",
+    "description": "Una implementación de solución para el problema Weapon Target Assignment (WTA) con Simulated Annealing y heurística Best Improvement.",
+    "responsabilities": "Proyecto de la asignatura de Introducción a la Inteligencia Artificial que implicaba el desarrollo del servicio que entrega una posible solución al problema WTA implementando el método y heurística especificados . En este caso, se utilizó Simulated Annealing y Best Improvement. Se desarrolló en C++ y se utilizó Bash y Make para la automatización de la compilación y ejecución del programa. Además se trabajó en un informe técnico que detalla el problema, la solución y los resultados obtenidos.",
     "tags": [
       "C++",
       "Bash",
@@ -15,16 +16,18 @@
     }
   },
   {
-    "name": "Punto Ético",
-    "description": "Sistema que gestiona el canal de las denuncias en empresas. Levantamiento de requerimientos, diseño de la arquitectura y desarrollo del servicio web y API-REST para la gestión de denuncias.",
-    "tags": ["NextJS", "Golang", "AWS-EC2", "Bootstrap", "Docker"],
+    "name": "Punto Ético®",
+    "description": "Sistema que gestiona el canal de denuncias en empresas.",
+    "responsabilities": "Levantamiento de requerimientos, diseño de la arquitectura y desarrollo full-stack de los requerimientos para posteriormente lenvantar los servicios en producción mediante los servicios de la nube provisto por AWS tanto para levantar los entornos de producción en máquinas virtuales dispuestas en la red y la  gestión de nombres de dominio que posiciona los servicios sus dominios correspondientes.",
+    "tags": ["NextJS", "Zustand", "React-Query", "TypeScript", "Golang", "AWS-EC2", "AWS-Route53", "Bootstrap", "Docker"],
     "urls": {
       "web": "https://puntoetico.cl"
     }
   },
   {
-    "name": "Apprende",
+    "name": "Apprende®",
     "description": "Apprende es una red social que conecta a los interesados en participar de la Educación No Formal. Se desarrolló el servicio web. Participé activamente como desarrollador y líder de equipo.",
+    "responsabilities": "",
     "tags": ["ReacJS", "Bootstrap", "Docker", "AWS-EC2"],
     "urls": {
       "linkedin": "https://www.linkedin.com/company/apprendecl/?originalSubdomain=cl",
@@ -34,6 +37,7 @@
   {
     "name": "FESW - Peacth-AC",
     "description": "Proyecto para presentar en la Feria de Softare UTFSM. Se desarrolló un sistema de control de pacientes con tratamiento de anticoagulante acenocumarol. El sistema permite llevar un control de los pacientes, sus controles y la dosis de anticoagulante. La estimación de dosis puede ser manual, por método del tanteo o estimada por un algoritmo de Regresión Lineal o Machine Learning.",
+    "responsabilities": "",
     "tags": ["ReacJS", "Bootstrap", "Shards", "Docker", "Heroku"],
     "urls": {
       "web": "https://peacth-ac.feriadesoftware.cl"
@@ -42,6 +46,7 @@
   {
     "name": "Portafolio",
     "description": "Este portafolio fue desarrollado con NuxtJS y TailwindCSS.",
+    "responsabilities": "",
     "tags": ["NuxtJS", "Tailwind"],
     "urls": {
       "github": "https://github.com/pedrodonoso/pedrodonoso.github.io"
