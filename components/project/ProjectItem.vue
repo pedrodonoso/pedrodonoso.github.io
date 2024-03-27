@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="flex justify-left items-center gap-6 space-y-7 text-pretty">
+    <article class="flex justify-left items-center gap-6 space-y-7 text-pretty bg-teal-700 w-full p-9">
         <div class="flex flex-col text-left space-y-8 gap-6 w-full">
             <div class="space-y-3 md:space-y-4">
                 <h1 class="flex text-xl font-extrabold">
@@ -35,5 +35,5 @@ defineProps({
 
             </div>
         </div>
-    </div>
+    </article>
 </template>
