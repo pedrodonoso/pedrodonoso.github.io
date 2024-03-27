@@ -12,7 +12,7 @@ defineProps({
   <div class="flex justify-center">
     <div class="w-screen max-w-3xl md:max-w-2xl md:w-4/6 px-12 md:p-0 space-y-16">
       <Header>
-        <h1 class="text-3xl font-extrabold animate__animated animate__fadeIn animate__delay-1500ms"
+        <h1 class="text-3xl font-extrabold animate__animated animate__fadeIn animate__delay-1s"
           style="animation-duration: 1s;">Hey!
           Hola, soy <span class="text-teal-400">Pedro</span>.👋</h1>
         <div class="font-semibold animate__animated animate__fadeIn animate__delay-2s" style="animation-duration: 2s;">

@@ -21,7 +21,7 @@ import IconOasis from '~/assets/icons/logo.svg'
 </script>
 
 <template>
-    <div class="sticky top-0 start-0 shadow-xl py-6 px-8 bg-[#2a3141bd] z-10">
+    <div class="sticky top-0 start-0 shadow-xl py-6 px-8 bg-[#2a3141bd] z-10 animate__animated animate__fadeIn animate__delay-4s">
         <nav :class="showDrop ? 'mb-4' : ''" class="flex overflow-x-auto  space-x-8 justify-between sm:justify-start items-center">
 
             <IconOasis class="size-8 text-teal-200" :fontControlled="false" alt="oasis icon" />
