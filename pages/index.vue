@@ -28,8 +28,7 @@ defineProps({
             <contact-item href="https://github.com/pedrodonoso" icon="uil:github">
             </contact-item>
             <contact-item href="https://www.linkedin.com/in/pedrodonosoaguilera/" icon="uil:linkedin"></contact-item>
-            <contact-item href="mailto:pedro.donosoa.dev@gmail.com" icon="bi:envelope-arrow-up-fill">Cotiza tu
-              consultoría!</contact-item>
+            <contact-item href="mailto:pedro.donosoa.dev@gmail.com?subject=[ Cotización ]&body=Buen día! Cuentame, qué necesitas? 🧐" icon="bi:envelope-arrow-up-fill">Cotiza!</contact-item>
           </contact-container>
         </section-container>
       </aside>
