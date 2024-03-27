@@ -22,7 +22,7 @@ defineProps({
                             <Badge v-bind:key="tag" v-for="(tag) in tags">{{ tag }} </Badge>
                         </badge-container>
                     </nav>
-                    <social class="text-2xl lg:text-3xl" :github="urls.github" :linkedin="urls.linkedin"
+                    <social class="text-2xl lg:text-3xl items-end" :github="urls.github" :linkedin="urls.linkedin"
                         :web="urls.web" />
                 </div>
 
