@@ -55,14 +55,5 @@
     "urls": {
       "web": "https://peacth-ac.feriadesoftware.cl"
     }
-  },
-  {
-    "name": "Portafolio",
-    "description": "Portafolio personal con la finalidad de aprender sobre NuxtJS y Tailwind.",
-    "responsabilities": "Realicé este portafolio con el objetivo de familiarizarme con NuxtJS y Tailwind, además de proporcionarme un espacio para exhibir mis proyectos y habilidades. Se desplegó en GitHub Pages para su visualización.",
-    "tags": ["NuxtJS", "Tailwind"],
-    "urls": {
-      "github": "https://github.com/pedrodonoso/pedrodonoso.github.io"
-    }
   }
 ]

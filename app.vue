@@ -1,10 +1,11 @@
 <script setup lang="ts">
+const title = 'Pedro Matías Donoso Aguilera | Frontend | Backend | Programador | Desarrollador Web | JavaScript | React | Next | Golang | Node | Tailwind | AWS | Consultoría de software | Computación | sistemas informáticos | sistema informático | programación'
+const description = 'Protafolio donde presento todos mis proyectos, habilidades y contacto. Soy desarrollador web full-stack. Trabajo con tecnologías como NextJS, VueJS, Tailwind, Bootstrap, Golang, Docker, AWS-EC2-RDB-ROUTE, etc.'
 useSeoMeta({
-  title: 'Portafolio de Pedro Donoso - Desarrollador Web, Frontend y Backend',
-  ogTitle: 'Portafolio de Pedro Donoso - Desarrollador Web, Frontend y Backend',
-  description: 'Protafolio donde presento todos mis proyectos, habilidades y contacto. Soy desarrollador web, frontend y backend. Trabajo con tecnologías como NextJS, VueJS, Tailwind, Bootstrap, Golang, Docker, AWS-EC2-RDB-ROUTE, etc.',
-  ogDescription: 'Protafolio donde presento todos mis proyectos, habilidades y contacto. Soy desarrollador web, frontend y backend. Trabajo con tecnologías como NextJS, VueJS, Tailwind, Bootstrap, Golang, Docker, AWS-EC2-RDB-ROUTE, etc.',
-  twitterCard: 'summary_large_image',
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
 })
 </script>
 <template>
