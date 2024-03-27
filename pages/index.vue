@@ -32,19 +32,19 @@ defineProps({
         </p>
       </Header>
       <main class="animate__animated animate__fadeIn animate__delay-4s">
-        <SectionContainer title="Proyectos" icon="tabler:folder-code" id="projects" class="pt-16">
+        <SectionContainer title="Proyectos" icon="tabler:folder-code" id="projects" class="pt-24">
           <div class="bg-teal-700 w-full p-9" v-bind:key="project.name" v-for="(project) in projects">
             <ProjectItem v-bind="project" v-bind:key="project.name" />
           </div>
         </SectionContainer>
 
-        <SectionContainer title="Habilidades" icon="tabler:code-plus" id="skills" class="pt-16">
+        <SectionContainer title="Habilidades" icon="tabler:code-plus" id="skills" class="pt-24">
           <skill-container>
             <skill-item v-bind:key="skill" v-for="(skill) in skills" :title="skill" />
           </skill-container>
         </SectionContainer>
 
-        <SectionContainer title="Contacto" icon="tabler:message-circle-code" id="contact" class="pt-16 pb-16 md:pb-32">
+        <SectionContainer title="Contacto" icon="tabler:message-circle-code" id="contact" class="pt-24 pb-24 md:pb-32">
           <div class=" bg-teal-700 w-full p-9">
             <contact-container>
               <contact-item href="https://github.com/pedrodonoso" icon="uil:github">
