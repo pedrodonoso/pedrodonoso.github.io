@@ -1,8 +1,8 @@
 # Portafolio Nuxt + Tailwind
 
-![MOBILE](/gifs/animation-web.gif)
+![MOBILE](/public/gifs/animation-web.gif)
 
-![MOBILE](/gifs/animation-mobile.gif)
+![MOBILE](/public/gifs/animation-mobile.gif)
 
 # Setup NPM
 
