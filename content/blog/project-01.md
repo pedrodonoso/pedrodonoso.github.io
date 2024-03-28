@@ -1,9 +1,9 @@
 ---
-title: 'Title of the page'
-description: 'meta description of the page'
+title: 'Portfolio Documentation'
+description: 'Portfolio documentation. Nuxt + Tailwind + Nuxt-Content'
 ---
 
-# Portafolio Nuxt + Tailwind
+# Portafolio Nuxt + Tailwind + Nuxt-Content
 
 ![MOBILE](/portafolio/shot.so.png){ width="600" height="300" style="display: block; margin: 0 auto" }
 
