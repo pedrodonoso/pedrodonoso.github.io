@@ -1,26 +1,34 @@
-name: Deploy to GitHub Pages
-on:
+name: Portfolio github pages
+
+on: 
   workflow_dispatch:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: corepack enable
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Setup node env
+        uses: actions/setup-node@v2.1.4
         with:
           node-version: "20"
-      # Pick your own package manager and build script
-      - run: npm install
-      - run: npx nuxt build --preset github_pages
+
+      - name: Install dependencies  
+        run: npm i
+
+      - name: Generate
+        run: npm run build --present github_pages
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./.output/public
-  # Deployment job
+
   deploy:
     # Add a dependency to the build job
     needs: build
