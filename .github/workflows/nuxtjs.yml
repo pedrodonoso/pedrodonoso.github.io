@@ -22,7 +22,7 @@ jobs:
         run: npm i
 
       - name: Generate
-        run: npm run build --present github_pages
+        run: npx nuxt build --preset github_pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
