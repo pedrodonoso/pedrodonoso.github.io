@@ -8,9 +8,9 @@ export default {
             showDrop: false,
             name: 'Pedro Donoso',
             routes: [
-                { name: 'Proyectos', href: '#projects' },
-                { name: 'Habilidades', href: '#skills' },
-                { name: 'Contacto', href: '#contact' }],
+                { name: 'Proyectos', href: '/#projects' },
+                { name: 'Habilidades', href: '/#skills' },
+                { name: 'Contacto', href: '/#contact' }],
             focused: focused.value
         }
     }
@@ -21,7 +21,7 @@ import IconOasis from '~/assets/icons/logo.svg'
 </script>
 
 <template>
-    <nav class="sticky top-0 start-0 shadow-xl py-6 px-8 bg-slate-800 z-10 animate__animated animate__fadeIn animate__delay-2s">
+    <nav class="sticky top-0 start-0 shadow-xl py-6 px-8 bg-slate-800">
         <div :class="showDrop ? 'mb-4' : ''" class="flex overflow-x-auto  space-x-8 justify-between sm:justify-start items-center">
 
             <IconOasis class="size-8 text-teal-200" :fontControlled="false" alt="oasis icon" />
