@@ -1,8 +1,11 @@
+---
+title: 'Title of the page'
+description: 'meta description of the page'
+---
+
 # Portafolio Nuxt + Tailwind
 
-![MOBILE](/gifs/animation-web.gif)
-
-![MOBILE](/gifs/animation-mobile.gif)
+![MOBILE](/portafolio/shot.so.png){ width="600" height="300" style="display: block; margin: 0 auto" }
 
 # Setup NPM
 
