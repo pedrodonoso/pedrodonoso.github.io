@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     },
   ],
   routeRules: {
-    "/blog/**": { ssr: false },
+    "/blog/**": { ssr: false }, // static page for blog
   },
   app: {
     head: {
