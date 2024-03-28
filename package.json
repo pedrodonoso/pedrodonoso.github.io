@@ -24,7 +24,6 @@
     "autoprefixer": "^10.4.19",
     "nuxt-icon": "^0.6.10",
     "nuxt-svgo": "^4.0.0",
-    "pinceau": "^0.15.4",
-    "postcss": "^8.4.38"
+    "pinceau": "^0.15.4"
   }
 }
