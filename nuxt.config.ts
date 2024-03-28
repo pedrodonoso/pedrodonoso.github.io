@@ -1,14 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  tailwindcss: {
-    cssPath: "~/assets/css/tailwind.css",
-    configPath: "tailwind.config",
-    exposeConfig: false,
-    exposeLevel: 2,
-    config: {},
-    injectPosition: "first",
-    viewer: true,
-  },
+  extends: "@nuxt-themes/docus",
   devtools: { enabled: false },
   modules: [
     "nuxt-icon",
@@ -33,14 +25,8 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  content: {
-    markdown: {
-      tags: {
-        h1: "MyProseH1",
-        h2: "MyProseH2",
-        p: "MyProseP",
-      },
-    },
+  routeRules: {
+    "/blog/**": { ssr: false },
   },
   app: {
     head: {
