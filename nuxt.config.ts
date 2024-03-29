@@ -27,13 +27,9 @@ export default defineNuxtConfig({
   ],
   nitro: {
     prerender: {
-      routes: ["/blog/project-01"],
-      // ignore: ["/dynamic"],
+      routes: ["/blog/"],
     },
   },
-  // routeRules: {
-  //   "/blog/**": { prerender: true }, // static page for blog
-  // },
   app: {
     head: {
       link: [
