@@ -25,9 +25,15 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  routeRules: {
-    "/blog/**": { ssr: false }, // static page for blog
+  nitro: {
+    prerender: {
+      routes: ["/blog/project-01"],
+      // ignore: ["/dynamic"],
+    },
   },
+  // routeRules: {
+  //   "/blog/**": { prerender: true }, // static page for blog
+  // },
   app: {
     head: {
       link: [
