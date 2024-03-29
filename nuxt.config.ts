@@ -25,10 +25,14 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  nitro: {
-    prerender: {
-      routes: ["/blog/"],
-    },
+  content: {
+    highlight: {
+      theme: {
+        default: 'github-light',
+        dark: 'github-dark',
+        sepia: 'monokai'
+      }
+    }
   },
   app: {
     head: {
