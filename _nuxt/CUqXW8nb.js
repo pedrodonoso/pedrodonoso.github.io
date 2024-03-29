@@ -1,0 +1,1 @@
+import{_ as o}from"./DlAUqK2U.js";import{b as t,c as r,K as c}from"./BGBkLIbP.js";const n={};function s(e,a){return t(),r("blockquote",null,[c(e.$slots,"default",{},void 0,!0)])}const d=o(n,[["render",s],["__scopeId","data-v-96397147"]]);export{d as default};
