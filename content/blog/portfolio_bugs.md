@@ -20,13 +20,13 @@ Cuando comencé a integrar Nuxt-Content a este proyecto, se me ocurrió una exce
     └── skills.csv
 ```
 
-Además en el apartado [Content Nuxt - Content directory](https://content.nuxt.com/usage/content-directory) no explica ninguna forma de preprocesar los archivos content.
+Además en el apartado [Content Nuxt - Content directory](https://content.nuxt.com/usage/content-directory){:target="\_\_blank"} no explica ninguna forma de preprocesar los archivos content.
 
-Así que seguí en mi travesía por el mundo de Nuxt, Tailwind y [Docus](https://docus.dev/).
+Así que seguí en mi travesía por el mundo de Nuxt, Tailwind y [Docus](https://docus.dev/){:target="\_\_blank"}.
 
 Pero al realizar la construcción del proyecto, pude notar algunos errores y advertencias que no me mostraba la versión `hot reload` como es de costumbre 🥲.
 
-Utilicé el siguiente comando para construir el proyecto utilizando el preset de nitro [Nitro - Github pages](https://nitro.unjs.io/deploy/providers/github-pages)
+Utilicé el siguiente comando para construir el proyecto utilizando el preset de nitro [Nitro - Github pages](https://nitro.unjs.io/deploy/providers/github-pages){:target="\_\_blank"}
 
 ```bash
     npx nuxt build --preset github_pages
@@ -127,7 +127,7 @@ Pero de pronto lo que me imaginaba pasaría, la construcción se caía mostrando
 
 Al parecer problemas con el prerenderizado de las páginas para prepararlo para la vida, prepararlo para su ejecución en Github Pages.
 
-Esto era lo que quería ya que el proyecto funcionaba en [Netlify](https://pdonoso.netlify.app/), pero no estaba conforme, necesitaba solucionarlo, luego de haber trabajado con ReactJS entendía que un proyecto en [SPA](https://en.wikipedia.org/wiki/Single-page_application) era necesario en producción, pero más que la busqueda de lo óptimo, se convirtió en un simple capricho.
+Esto era lo que quería ya que el proyecto funcionaba en [Netlify](https://pdonoso.netlify.app/){:target="\_\_blank"}, pero no estaba conforme, necesitaba solucionarlo, luego de haber trabajado con ReactJS entendía que un proyecto en [SPA](https://en.wikipedia.org/wiki/Single-page_application){:target="\_\_blank"} era necesario en producción, pero más que la busqueda de lo óptimo, se convirtió en un simple capricho.
 
 Cuando entendí eso, pude colocar la cabeza en la almohada y seguir durmiendo.
 
@@ -136,7 +136,7 @@ Leyendo detenidamente la terminal el sistema no estaba prerenderizando un archiv
 
 Entonces fuí a la documentación y encontré algo interesante.
 
-- [Nuxt - Hybrid rendering](https://nuxt.com/docs/guide/concepts/rendering#hybrid-rendering)
+- [Nuxt - Hybrid rendering](https://nuxt.com/docs/guide/concepts/rendering#hybrid-rendering){:target="\_\_blank"}
 
   ```js{id="python-print" class="blue large" data-filename="test.py"}
   export default defineNuxtConfig({
@@ -161,7 +161,7 @@ Entonces fuí a la documentación y encontré algo interesante.
   });
   ```
 
-- [Nuxt - Define route rules](https://nuxt.com/docs/api/utils/define-route-rules)
+- [Nuxt - Define route rules](https://nuxt.com/docs/api/utils/define-route-rules){:target="\_\_blank"}
 
   ```js
   export default defineNuxtConfig({
@@ -171,7 +171,7 @@ Entonces fuí a la documentación y encontré algo interesante.
   });
   ```
 
-- [Nuxt - Selective pre-rendering](https://nuxt.com/docs/getting-started/deployment#selective-pre-rendering)
+- [Nuxt - Selective pre-rendering](https://nuxt.com/docs/getting-started/deployment#selective-pre-rendering){:target="\_\_blank"}
 
   ```js
   export default defineNuxtConfig({
