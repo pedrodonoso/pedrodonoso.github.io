@@ -1,8 +1,8 @@
 <script setup>
-const projects = await queryContent("/portfolio/projects")
+const projects = await queryContent("/_portfolio/projects")
   .findOne()
   .then((res) => res.body);
-const querySkills = await queryContent("/portfolio/skills")
+const querySkills = await queryContent("/_portfolio/skills")
   .findOne()
   .then((res) => res.body);
 const skills = querySkills.map((item) => item.skill);
