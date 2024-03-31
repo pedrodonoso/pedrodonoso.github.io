@@ -6,15 +6,15 @@ description: 'Realicé este portafolio con el objetivo de familiarizarme con Nux
 
 # Portafolio Nuxt + Tailwind + Nuxt-Content
 
-![MOBILE](/portafolio/shot.so.alternative.png){ width="600" height="300" style="display: block; margin: 0 auto" }
+![MOBILE](/portafolio/documentation/shot.so.alternative.png){ width="600" height="300" style="display: block; margin: 0 auto" }
 
-# Setup NPM
+## Setup NPM
 
 ```bash
     npm i
 ```
 
-# Development Server
+## Development Server
 
 Start the development server on http://localhost:3000:
 
@@ -22,7 +22,7 @@ Start the development server on http://localhost:3000:
     npm run dev
 ```
 
-# Production
+## Production
 
 Build the application for production in `.output` directory:
 
@@ -30,7 +30,7 @@ Build the application for production in `.output` directory:
     npm run build
 ```
 
-## Serving 
+### Serving 
 - Locally preview production build:
 
 ```bash

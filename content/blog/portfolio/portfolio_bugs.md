@@ -2,9 +2,13 @@
 title: Larga travesía con Nuxt-Content
 subtitle:
 description: Imprevistos encontrados al realizar este sitio. Un relato angustiante y estremecedor.
+tags: ["NuxtJS", "Nuxt-Content", "Tailwind"]
+date: 29-03-2024
 ---
 
 # Larga travesía con Nuxt-Content
+
+![MOBILE](/portafolio/bugs/portada.png){ width="600" height="300" style="display: block; margin: 0 auto" }
 
 Cuando comencé a integrar Nuxt-Content a este proyecto, se me ocurrió una excelente idea para organizar los archivos `.md` donde alojaría cada una de las páginas. Que por supuesto no era nada nuevo, es algo parecido a lo que se puede ver en la documentación [Nuxt Content - Getting started](https://content.nuxt.com/v1/getting-started/writing){:target="\_\_blank"}
 
@@ -15,9 +19,6 @@ Cuando comencé a integrar Nuxt-Content a este proyecto, se me ocurrió una exce
 │   ├── project-02.md
 │   └── index.md
 ├── index.md
-└── portfolio
-    ├── projects.json
-    └── skills.csv
 ```
 
 Además en el apartado [Content Nuxt - Content directory](https://content.nuxt.com/usage/content-directory){:target="\_\_blank"} no explica ninguna forma de preprocesar los archivos content.
@@ -26,13 +27,13 @@ Así que seguí en mi travesía por el mundo de Nuxt, Tailwind y [Docus](https:/
 
 Pero al realizar la construcción del proyecto, pude notar algunos errores y advertencias que no me mostraba la versión `hot reload` como es de costumbre 🥲.
 
-Utilicé el siguiente comando para construir el proyecto utilizando el preset de nitro [Nitro - Github pages](https://nitro.unjs.io/deploy/providers/github-pages){:target="\_\_blank"}
+Para construir el proyecto utilicé el preset de nitro [Nitro - Github pages](https://nitro.unjs.io/deploy/providers/github-pages){:target="\_\_blank"}, que imaginé podría mejorar algo la situación.
 
 ```bash
     npx nuxt build --preset github_pages
 ```
 
-El que me pareció un grave problema fué el siguiente porque a primera vista era un error contundente luego de unas horas buscando solucionarlo en el mundo de stackoverflow 🫶 y de instalar unos cuantos modulos. No lograba deshacerme de tamaño número de lineas molestas en la consola.
+Todo iba bien los primeros segundos hasta que comenzaron a parecer algunas lineas de advertencia sobre el uso de Tailwind, un poco preocupado investigué y al parecer nadie había solucionado el problema, como la terminal seguía en lo suyo, me detuve en un error que supuse podría ser importante, a primera vista era un error contundente pero luego de unas horas buscando en el mundo de stackoverflow 🫶 y de instalar unos cuantos modulos. No lograba deshacerme de tamaño número de lineas molestas en la consola.
 
 Procedí a dejarlo fluir...
 
@@ -127,11 +128,11 @@ Pero de pronto lo que me imaginaba pasaría, la construcción se caía mostrando
 
 Al parecer problemas con el prerenderizado de las páginas para prepararlo para la vida, prepararlo para su ejecución en Github Pages.
 
-Esto era lo que quería ya que el proyecto funcionaba en [Netlify](https://pdonoso.netlify.app/){:target="\_\_blank"}, pero no estaba conforme, necesitaba solucionarlo, luego de haber trabajado con ReactJS entendía que un proyecto en [SPA](https://en.wikipedia.org/wiki/Single-page_application){:target="\_\_blank"} era necesario en producción, pero más que la busqueda de lo óptimo, se convirtió en un simple capricho.
+Esto era lo que quería, ya que el proyecto funcionaba en [Netlify](https://pdonoso.netlify.app/){:target="\_\_blank"}, pero no estaba conforme, necesitaba solucionarlo, luego de haber trabajado con ReactJS entendía que un proyecto en [SPA](https://en.wikipedia.org/wiki/Single-page_application){:target="\_\_blank"} era necesario en producción, pero más que la busqueda de lo óptimo, esto se había convertido en un simple capricho.
 
 Cuando entendí eso, pude colocar la cabeza en la almohada y seguir durmiendo.
 
-A primera hora del día y luego de un café junto a un pancito con tomate 🥪 por supuesto, me senté en la silla y comencé con ideas nuevas.
+A primera hora del día y luego de un café junto a un pancito con tomate, por supuesto, me senté en la silla y comencé con ideas nuevas.
 Leyendo detenidamente la terminal el sistema no estaba prerenderizando un archivo existente, estaba procesando una ruta llamada `/blog/project` que claramente no existía.
 
 Entonces fuí a la documentación y encontré algo interesante.
@@ -226,7 +227,7 @@ Confiado de mi nueva plantilla para los nombres de los proyectos, decidí compro
 
 Contento del nuevo hallazgo, reviso el sitio desde mi móvil y no estaba disponible.
 
-Cansado y ya volviendo a la costumbre de la angustiante situación, tomo el hervidor y procedo a llenarlo a tope, pensando que quedaba una larga noche.
+Cansado y ya resignandome a volver a la rutina de la angustiante situación, tomo el hervidor y procedo a llenarlo a tope, pensando que quedaba una larga noche.
 
 Vuelvo a mi escritorio, reviso la terminal luego de ordenarle que construyera el proyecto y me encuentro con la confirmación de la falla, ahora renderizaba una ruta llamada `/blog/portfolio`.
 
