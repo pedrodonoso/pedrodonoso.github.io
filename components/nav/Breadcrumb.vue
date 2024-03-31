@@ -39,7 +39,7 @@ function getPaths(_path: String) {
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="m1 9 4-4-4-4" />
                 </svg>
-                <a :href="item.href" :class="index === getPaths(path).length - 1 && index !== 0 ? 'pointer-events-none' : ''"
+                <a :href="item.href" :class=" index === 0 ? '' : 'pointer-events-none'"
                     class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
                     {{ item.label }}
                 </a>
