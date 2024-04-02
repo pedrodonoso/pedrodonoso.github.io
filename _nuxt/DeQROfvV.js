@@ -1,0 +1,1 @@
+import{_ as t}from"./DlAUqK2U.js";import{b as s,c as n,I as o}from"./Dcm-RDEy.js";const r={},c={class:"flex align-middle text-center items-center text-xs md:text-sm font-medium px-3 py-1 bg-teal-900 cursor-default"};function _(e,a){return s(),n("span",c,[o(e.$slots,"default")])}const d=t(r,[["render",_]]);export{d as _};

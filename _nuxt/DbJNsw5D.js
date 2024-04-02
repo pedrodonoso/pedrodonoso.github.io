@@ -1,0 +1,1 @@
+import{_ as t}from"./DlAUqK2U.js";import{b as o,c as s,I as r}from"./Dcm-RDEy.js";const c={},n={class:"flex flex-wrap justify-start gap-1 md:gap-2"};function _(e,a){return o(),s("div",n,[r(e.$slots,"default")])}const p=t(c,[["render",_]]);export{p as _};

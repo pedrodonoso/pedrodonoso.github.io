@@ -1,0 +1,1 @@
+import{_ as o}from"./DlAUqK2U.js";import{b as t,c as n,I as r}from"./Dcm-RDEy.js";const c={};function s(e,_){return t(),n("tbody",null,[r(e.$slots,"default")])}const f=o(c,[["render",s]]);export{f as default};

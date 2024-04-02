@@ -1,0 +1,1 @@
+import{_ as r}from"./DlAUqK2U.js";import{b as o,c as t,I as a}from"./Dcm-RDEy.js";const n={};function s(e,c){return o(),t("ul",null,[a(e.$slots,"default",{},void 0,!0)])}const _=r(n,[["render",s],["__scopeId","data-v-5bd61aad"]]);export{_ as default};

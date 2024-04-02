@@ -1,1 +1,0 @@
-import{_ as t}from"./DlAUqK2U.js";import{b as o,c as s,K as r}from"./xKfPub33.js";const c={},a={class:"text-bold text-2xl text-teal-200 pb-4"};function n(e,l){return o(),s("h1",a,[r(e.$slots,"default")])}const d=t(c,[["render",n]]);export{d as default};
