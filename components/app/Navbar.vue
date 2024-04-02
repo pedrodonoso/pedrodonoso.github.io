@@ -10,8 +10,8 @@ export default {
             routes: [
                 { name: 'Proyectos', href: '/#projects' },
                 { name: 'Habilidades', href: '/#skills' },
-                { name: 'Contacto', href: '/#contact' },
-                { name: 'Blog', href: '/blog' }],
+                { name: 'Contacto', href: '/#contact' }],
+                // { name: 'Blog', href: '/blog' }],
             focused: focused.value
         }
     }
