@@ -25,6 +25,11 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+  nitro: {
+    prerender: {
+      ignore: ["/blog/"]
+    }
+  },
   content: {
     highlight: {
       theme: {
